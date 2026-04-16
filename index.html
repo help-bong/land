@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>랜드로버</title>
+    <style>
+        /* 1. Reset & Base Style */
+        body { margin: 0; padding: 0; font-family: "맑은 고딕", sans-serif; }
+        ul, li, ol { list-style: none; margin: 0; padding: 0; }
+        a { text-decoration: none; }
+
+        /* 2. Layout (Center Align) */
+        header, #slider, section, footer {
+            width: 1100px;
+            margin: 0 auto;
+            overflow: hidden; /* 내부 float 요소들 때문에 높이가 깨지는 것 방지 */
+        }
+
+        /* 3. Header Section */
+        header { height: 100px; background-color: gold; }
+        #logo {
+            float: left;
+            width: 130px;
+            height: 70px;
+            margin: 10px 0 0 10px;
+            background-color: green;
+        }
+        
+        nav {
+            float: right;
+            width: 740px;
+            height: 30px;
+            margin: 30px 30px 0 0;
+            background-color: pink;
+        }
+        nav ul { font-family: "Arial"; font-weight: bold; }
+        nav ul li { float: left; padding: 0 20px; }
+        nav ul li a { color: #333; transition: all 0.3s; }
+        nav ul li a:hover { background-color: #fff; color: #666; }
+
+        /* 4. Visual Slider Section */
+        #slider { height: 450px; background-color: tomato; }
+        #slider img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* 5. Main Content Section */
+        section { height: 280px; background-color: cyan; }
+        article {
+            float: left;
+            width: 340px;
+            height: 145px;
+            margin: 30px 10px;
+            background-color: yellow;
+        }
+        article h3 { width: 100%; height: 30px; margin: 0; font-size: 16px; }
+        article img { float: left; margin-right: 10px; }
+        article h4 { height: 30px; margin: 0; font-size: 14px; }
+        article p { margin-top: 5px; font-family: "돋움", sans-serif; font-size: 12px; color: #666; line-height: 1.4; }
+
+        /* Icon Grid in Article */
+        article .icon {
+            float: left;
+            width: 100px;
+            height: 75px;
+            margin-left: 5px;
+            background-color: white;
+            text-align: center;
+        }
+        article .icon img { float: none; margin: 0 auto; display: block; } /* 아이콘 중앙 정렬 */
+        article .icon span {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        /* 6. Footer Section */
+        footer { height: 100px; background-color: #eee; }
+        footer img { float: left; margin: 20px 0 0 20px; }
+        footer p {
+            float: right;
+            margin: 40px 100px 0 0;
+            font-family: "돋움", sans-serif;
+            font-size: 12px;
+            color: #666;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div id="logo"><img src="../img/logo.jpg" alt="랜드로버 로고"></div>
+        <nav>
+            <ul>
+                <li><a href="#">VEHICLES</a></li>
+                <li><a href="#">PRICE</a></li>
+                <li><a href="#">OFFERS</a></li>
+                <li><a href="#">SECONDHAND CAR</a></li>
+                <li><a href="#">OWNERSHIP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="slider">
+        <img src="../img/2.jpg" alt="메인 슬라이드 이미지">
+    </div>
+
+    <section>
+        <article>
+            <h3>NEWS</h3>
+            <a href="#"><img src="../img/4.jpg" alt="뉴스 이미지"></a>
+            <h4>Discovery 5</h4>
+            <p>랜드로버가 만든 정통 SUV, 디스커버리의 신형 모델이 다음 달 공개된다.</p>
+        </article>
+
+        <article>
+            <h3>랜드로버 모델 살펴보기</h3>
+            <a href="#"><img src="../img/8.jpg" alt="모델 이미지"></a>
+        </article>
+
+        <article>
+            <h3>고객지원</h3>
+            <div class="icon">
+                <a href="#"><img src="../img/icon3.jpg" alt="시승신청"></a>
+                <span>시승신청</span>
+            </div>
+            <div class="icon">
+                <a href="#"><img src="../img/icon4.jpg" alt="뉴스레터"></a>
+                <span>뉴스레터 신청</span>
+            </div>
+            <div class="icon">
+                <a href="#"><img src="../img/icon5.jpg" alt="전시장찾기"></a>
+                <span>전시장 찾기</span>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <img src="../img/logo2.jpg" alt="푸터 로고">
+        <p>Jaguar Land Rover Limited: Registered office: Abbey Road, Whitley, Coventry CV3 4LF. Registered in England No: 1672070</p>
+    </footer>
+
+</body>
+</html>
